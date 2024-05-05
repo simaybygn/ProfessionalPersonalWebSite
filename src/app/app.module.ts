@@ -1,20 +1,29 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './summary/summary.component';
+import { EducationComponent } from './education/education.component';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import { EmploymentComponent } from './employment/employment.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [				
     AppComponent,
-      SummaryComponent
+      SummaryComponent,
+      EducationComponent,
+      EmploymentComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

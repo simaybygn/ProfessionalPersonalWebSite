@@ -1,0 +1,29 @@
+
+
+<div class="flex">
+  <div class=" w-1/4  justify-center items-center" #rendererContainer></div>
+  <div class="w-3/4 flex flex-col justify-center items-center">
+    <p class="text-6xl font-bold text-white text-center mb-4">Education</p>
+    <mat-list >
+        <mat-list-item *ngFor="let educationInfo of this.educationDatas" class="!p-4" >
+          <div class="flex items-center">
+            <div  class="text-4xl text-white ">
+              <mat-icon>school</mat-icon>
+            </div>
+          
+            <div class="ml-4">
+              <span class="text-xl font-bold text-white">{{educationInfo.schoolName}}</span><br>
+              <span class="text-m font-bold text-white">
+                {{(educationInfo.startDate | date) + ' - '}}{{educationInfo.endDate | date}} <br>
+                <ng-container *ngIf="educationInfo.department">
+                  {{educationInfo.department}} <br>
+                </ng-container>
+                {{educationInfo.city + '/'}}{{educationInfo.country}}
+              </span>
+            </div>
+          </div>
+        </mat-list-item>
+     
+    </mat-list>
+  </div>
+</div>
