@@ -16,3 +16,9 @@ export interface EmploymentDataModel extends CommonDataModel{
     summary:string;
     additionalInformation:string[];
 }
+
+export interface ProjectsDataModel{
+    projectName:string;
+    information:string;
+    imageRoot:string;
+}

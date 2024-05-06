@@ -8,13 +8,15 @@ import { EducationComponent } from './education/education.component';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { EmploymentComponent } from './employment/employment.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
       SummaryComponent,
       EducationComponent,
-      EmploymentComponent
+      EmploymentComponent,
+      ProjectsComponent
    ],
   imports: [
     BrowserModule,

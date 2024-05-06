@@ -1,0 +1,26 @@
+
+<p class="text-6xl font-bold text-white text-center mb-4">Project</p>
+
+<div class="m-16 overflow-hidden">
+  <div class="md:flex">
+    <div class="md:w-2/5 justify-center items-center"> 
+      <img src="../../assets/images/girlWithCat.png" class="w-full h-full p-8" />
+    </div>
+    <div class="md:w-3/5 p-4">
+      <div *ngFor="let project of this.projectDatas" class="mb-8">
+        <div class="text-center mb-4">
+          <p class="text-xl font-bold text-white text-center mb-4">{{project.projectName}}</p>
+        </div>
+        <div class="pb-2">
+          <p class="text-2xl text-white text-center">{{project.information}}</p>
+        </div>
+        <div class="flex  justify-center items-center" *ngIf="project.projectName==='TARLADAN EVE'">
+         <iframe src="https://drive.google.com/file/d/14J4nTxmxFE0FqFwVqbbR3_8XuekbNlUP/preview" width="640" height="380" allow="autoplay"></iframe>    
+        </div>
+        <div class="flex  justify-center items-center" *ngIf="project.projectName==='PERSONAL WEB SITE'">
+          <iframe src="https://drive.google.com/file/d/1WWBye8YNUYDUfsHApCFzOCEuoAmCwLjB/preview" width="640" height="380" allow="autoplay"></iframe>    
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
