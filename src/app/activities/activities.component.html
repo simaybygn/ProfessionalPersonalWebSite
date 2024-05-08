@@ -1,0 +1,27 @@
+
+<div class="flex flex-col items-center">
+ <p class="text-6xl font-bold text-white text-center mb-4">Activities</p>
+     <div  *ngFor="let activitiesData of activitiesDatas" class=" w-1/2 m-4 bg-white rounded-xl shadow-md overflow-hidden bg-blur bg-opacity-70">
+    <mat-accordion class="flex items-center">
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title  class="flex flex-col items-center">
+            <div class="text-center">
+              <p  class="text-xl font-bold text-black text-center">{{activitiesData.activityName}}</p>
+            </div>
+            <div class="text-center">
+              <p class="text-m  text-black text-center ">{{activitiesData.position}}</p>
+              <p class="text-m  text-black text-center "> {{activitiesData.institutionName + ' / ' }}  {{activitiesData.location }}</p>
+              <p class="text-m  text-black text-center "> {{(activitiesData.startDate | date) + ' - '}}{{activitiesData.endDate | date}}</p>
+            </div>
+          </mat-panel-title>
+       
+       </mat-expansion-panel-header>
+       <p class="text-m font-bold text-black text-center ">  {{activitiesData.summary}} </p>
+     </mat-expansion-panel>
+   </mat-accordion>
+  
+  </div>
+</div>
+  

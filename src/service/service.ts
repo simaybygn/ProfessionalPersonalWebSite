@@ -1,4 +1,4 @@
-import { EducationDataModel, EmploymentDataModel, ProjectsDataModel } from "./service.page.model";
+import { ActivitiesDataModel, CoursesDataModel, EducationDataModel, EmploymentDataModel, ProjectsDataModel } from "./service.page.model";
 
 export const EducationDatas:EducationDataModel[]=[
     {
@@ -55,3 +55,89 @@ export const ProjectsData:ProjectsDataModel[]=[
       imageRoot:'https://drive.google.com/file/d/1WWBye8YNUYDUfsHApCFzOCEuoAmCwLjB/preview'
    }
 ]
+
+export const ActivitiesData:ActivitiesDataModel[]=[
+   {
+      activityName:'Deniz Yıldızı Project',
+      position:'Project Manager',
+      institutionName:'Çağdaş Yaşamı Destekleme Derneği',
+      startDate:new Date('01.09.2023'),
+      endDate:undefined,
+      summary:'It is a deep-rooted project that has been going on for 20 years. Training calendar, instructor and student communication are managed.',
+      location:'Kocaeli'
+   },
+   {
+      activityName:'Executive Board',
+      position:'Vice President',
+      institutionName:'Çağdaş Yaşamı Destekleme Derneği',
+      startDate:new Date('01.09.2021'),
+      endDate:new Date('01.09.2022'),
+      summary:'New projects and activities are organized taking into account the wishes of the students.',
+      location:'Kocaeli'
+   },
+   {
+      activityName:'23.Türkan Saylan Youth Convention',
+      position:'Participant',
+      institutionName:'Çağdaş Yaşamı Destekleme Derneği',
+      startDate:new Date('06.08.2021'),
+      endDate:new Date('08.08.2021'),
+      summary:'Projects were developed on the development plans determined by the United Nations.',
+      location:'Kocaeli'
+   },
+   {
+      activityName:'English Empowerment Project,',
+      position:'Participant',
+      institutionName:'Çağdaş Yaşamı Destekleme Derneği',
+      startDate:new Date('01.09.2020'),
+      endDate:new Date('01.06.2020'),
+      summary:'For 1 year, video calls were made with American students to support my English language development.',
+      location:'Kocaeli'
+   },
+   {
+      activityName:'Mevzu Kadınsa Symposium',
+      position:'Coordinator',
+      institutionName:'Genç Girişimciler Club,',
+      startDate:new Date('01.03.2020'),
+      endDate:undefined,
+      summary:'Speakers and sponsors to participate in the symposium were determined and the speakers were hosted. English',
+      location:'Kocaeli'
+   }
+]
+
+export const CoursesData:CoursesDataModel[]=[
+   {
+      courseName:'English Course',
+      institutionName:'American Culture Language Schools',
+      date:new Date('01.01.2022'),
+      isFlipped:false
+   },
+   {
+      courseName:'Effective Communication Skills And Conflict Management',
+      institutionName:'Morfo Danışmanlık',
+      date:new Date('01.04.2022'),
+      isFlipped:false
+   },
+   {
+      courseName:'Presentation Skills Training',
+      institutionName:'Morfo Danışmanlık',
+      date:new Date('01.07.2022'),
+      isFlipped:false
+   },
+   {
+      courseName:'Mobile Programming Course',
+      institutionName:'Ecodation Software Technology',
+      date:new Date('01.01.2021'),
+      isFlipped:false
+   },
+   {
+      courseName:'Python Programming Camp',
+      institutionName:'Türk Hava Kurumu University',
+      date:new Date('01.09.2021'),
+      isFlipped:false
+   },
+   {
+      courseName:'Engineers Summit',
+      institutionName:'BadiWorks',
+      date:new Date('01.06.2021'),
+      isFlipped:false
+   }]

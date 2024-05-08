@@ -22,3 +22,20 @@ export interface ProjectsDataModel{
     information:string;
     imageRoot:string;
 }
+
+export interface ActivitiesDataModel{
+    activityName:string;
+    position:string;
+    institutionName:string;
+    startDate:Date;
+    endDate?:Date;
+    summary:string;
+    location:string;
+}
+
+export interface CoursesDataModel{
+    courseName:string;
+    institutionName:string;
+    date:Date;
+    isFlipped?:boolean;
+}

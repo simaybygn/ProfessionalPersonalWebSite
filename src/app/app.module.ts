@@ -9,20 +9,28 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { EmploymentComponent } from './employment/employment.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ActivitiesComponent } from './activities/activities.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [								
     AppComponent,
       SummaryComponent,
       EducationComponent,
       EmploymentComponent,
-      ProjectsComponent
+      ProjectsComponent,
+      ActivitiesComponent,
+      CoursesComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
