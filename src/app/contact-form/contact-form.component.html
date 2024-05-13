@@ -1,0 +1,68 @@
+<p class="text-6xl font-bold text-white text-center mb-4">Contact</p>
+<div class="mt-4 overflow-x-hidden">
+  <div class="p-4 m-1 bg-white rounded-xl shadow-md overflow-hidden bg-blur bg-opacity-70">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
+          <div>
+            <label for="email_from" class="block mb-1">To</label>
+            <input
+              type="email"
+              class="w-full py-2 px-3 border rounded-md text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+              name="email_from"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              formControlName="email_from"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="message" class="block mb-1">Message</label>
+            <textarea
+              class="w-full py-2 px-3 border rounded-md text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+              formControlName="message"
+              name="message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-4 disabled:opacity-50"
+            [disabled]="!formData.valid"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="mt-6 ml-8 space-y-4">
+        <div class="flex items-center">
+          <mat-icon class="mr-2">mail</mat-icon>
+          <span>Email:</span>
+          <span class="ml-2">simay.bygn@outlook.com</span>
+        </div>
+        <div class="flex items-center">
+          <mat-icon class="mr-2">local_phone</mat-icon>
+          <span>Phone:</span>
+          <span class="ml-2">+90 535 608 8784</span>
+        </div>
+        <div class="flex items-center">
+          <mat-icon class="mr-2">home</mat-icon>
+          <span>Address:</span>
+          <span class="ml-2"> Kartal / İstanbul</span>
+        </div>
+        <div class="flex items-center">
+          <a href="https://tr.linkedin.com/in/simay-bayg%C4%B1n-08b82a19a" target="_blank">
+            <img class="w-10 h-10 mr-2" src="../../assets/images/linkedin.png" alt="Linkedin Logo">
+          </a>
+          <span>You can reach my Linkedin account with the button</span>
+        </div>
+        <div class="flex items-center">
+          <a href="https://github.com/simaybygn" target="_blank">
+            <img class="w-10 h-10 mr-2" src="../../assets/images/github.png" alt="Github Logo">
+          </a>
+          <span>You can reach my Github account with the button</span>
+        </div>
+      </div>
+    </div>
+  </div>
+< /div>
+ 

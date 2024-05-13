@@ -37,5 +37,6 @@ export interface CoursesDataModel{
     courseName:string;
     institutionName:string;
     date:Date;
+    image:string;
     isFlipped?:boolean;
 }

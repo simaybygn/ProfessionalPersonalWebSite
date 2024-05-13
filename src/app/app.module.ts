@@ -13,16 +13,20 @@ import { ActivitiesComponent } from './activities/activities.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoursesComponent } from './courses/courses.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
       SummaryComponent,
       EducationComponent,
       EmploymentComponent,
       ProjectsComponent,
       ActivitiesComponent,
-      CoursesComponent
+      CoursesComponent,
+      ContactFormComponent
    ],
   imports: [
     BrowserModule,
@@ -30,7 +34,10 @@ import { CoursesComponent } from './courses/courses.component';
     MatListModule,
     MatIconModule,
     MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

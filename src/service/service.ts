@@ -1,4 +1,21 @@
+import { Injectable } from "@angular/core";
 import { ActivitiesDataModel, CoursesDataModel, EducationDataModel, EmploymentDataModel, ProjectsDataModel } from "./service.page.model";
+import { HttpClient } from "@angular/common/http";
+import { map } from "rxjs";
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+@Injectable({
+   providedIn: 'root'
+ })
+export class ServicesService {
+   private mailApi = 'https://mailthis.to/codeninja'
+
+   constructor(private http: HttpClient) { }
+ 
+   sendEmail(serviceID: string, templateID: string, params: any, publicKey:string): Promise<EmailJSResponseStatus> {
+      return emailjs.send(serviceID, templateID, params,publicKey);
+    }
+ 
+}
 
 export const EducationDatas:EducationDataModel[]=[
     {
@@ -109,35 +126,34 @@ export const CoursesData:CoursesDataModel[]=[
       courseName:'English Course',
       institutionName:'American Culture Language Schools',
       date:new Date('01.01.2022'),
+      image:'../../assets/images/AmericanCultureEnglishSkillsCertificate-1.png',
       isFlipped:false
    },
    {
       courseName:'Effective Communication Skills And Conflict Management',
       institutionName:'Morfo Danışmanlık',
       date:new Date('01.04.2022'),
+      image:'../../assets/images/404NotFound.jpeg',
       isFlipped:false
    },
    {
       courseName:'Presentation Skills Training',
       institutionName:'Morfo Danışmanlık',
       date:new Date('01.07.2022'),
+      image:'../../assets/images/404NotFound2.png',
       isFlipped:false
    },
    {
       courseName:'Mobile Programming Course',
       institutionName:'Ecodation Software Technology',
       date:new Date('01.01.2021'),
+      image:'../../assets/images/MobileProgrammingCertificate-1.png',
       isFlipped:false
    },
    {
       courseName:'Python Programming Camp',
       institutionName:'Türk Hava Kurumu University',
       date:new Date('01.09.2021'),
-      isFlipped:false
-   },
-   {
-      courseName:'Engineers Summit',
-      institutionName:'BadiWorks',
-      date:new Date('01.06.2021'),
+      image:'../../assets/images/PythonCertificate-1.png',
       isFlipped:false
    }]

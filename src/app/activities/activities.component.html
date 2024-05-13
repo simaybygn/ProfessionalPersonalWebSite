@@ -1,13 +1,13 @@
 
 <div class="flex flex-col items-center">
  <p class="text-6xl font-bold text-white text-center mb-4">Activities</p>
-     <div  *ngFor="let activitiesData of activitiesDatas" class=" w-1/2 m-4 bg-white rounded-xl shadow-md overflow-hidden bg-blur bg-opacity-70">
-    <mat-accordion class="flex items-center">
+     <div  *ngFor="let activitiesData of activitiesDatas" class="items-center w-1/2 m-4 bg-white rounded-xl shadow-md overflow-hidden bg-blur bg-opacity-70">
+    <mat-accordion class=" items-center">
       <mat-expansion-panel (opened)="panelOpenState = true"
       (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title  class="flex flex-col items-center">
-            <div class="text-center">
+            <div class="justify-center items-center">
               <p  class="text-xl font-bold text-black text-center">{{activitiesData.activityName}}</p>
             </div>
             <div class="text-center">
