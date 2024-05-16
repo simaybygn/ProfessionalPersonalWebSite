@@ -20,13 +20,11 @@ formData!: FormGroup;
 
 
   onSubmit(formData:any) {
-    debugger;
-    
     this.contact.sendEmail('service_9s45w7f', 'template_1frrjfg', formData, 'KyYfCxj_OV4kc1Wy8')
       .then((response) => {
-        console.log('E-posta başarıyla gönderildi!', response);
+        alert('E-posta başarıyla gönderildi!'); 
       }, (error) => {
-        console.error('E-posta gönderilirken bir hata oluştu.', error);
+        alert('E-posta gönderilirken bir hata oluştu: ' + error); 
       });
   }
 

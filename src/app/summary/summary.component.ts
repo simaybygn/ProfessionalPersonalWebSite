@@ -23,11 +23,11 @@ export class SummaryComponent implements AfterViewInit  {
 
   initThree() {
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(75,  window.innerWidth / window.innerHeight, 0.1, 2000);
-    this.camera.position.set(- 1.9,0.9, 8.0);
+    this.camera = new THREE.PerspectiveCamera(25,  window.innerWidth / window.innerHeight, 0.1, 2000);
+    this.camera.position.set(4,0.9, 8.0);
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setSize(800, 600);
+    this.renderer.setSize(900, 700);
     this.renderer.setClearColor(0xffffff, 0);
     this.rendererContainer.nativeElement.appendChild(this.renderer.domElement);
 
@@ -38,9 +38,9 @@ export class SummaryComponent implements AfterViewInit  {
     this.controls.enableZoom = true
     this.controls.update();
 
-    this.loader.load('../../assets/models/woman.glb', (gltf) => {
+    this.loader.load('../../assets/models/old_computer.glb', (gltf) => {
       const model = gltf.scene;
-      model.position.set(0, 1, 0);
+      model.position.set(-1, -1, 0);
       this.scene.add(model);
 
       const ambientLight = new THREE.AmbientLight(0xffffff);

@@ -32,11 +32,11 @@ export class EducationComponent implements OnInit,AfterViewInit {
 
   initThree() {
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(75,  window.innerWidth / window.innerHeight, 0.1, 2000);
-    this.camera.position.set(-3.0,0.2,10);
+    this.camera = new THREE.PerspectiveCamera(48,  window.innerWidth / window.innerHeight, 0.1, 800);
+    this.camera.position.set(-5.0,25.0,18);
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setSize(800, 600);
+    this.renderer.setSize(900, 700);
     this.renderer.setClearColor(0xffffff, 0);
     this.rendererContainer.nativeElement.appendChild(this.renderer.domElement);
 
@@ -47,9 +47,9 @@ export class EducationComponent implements OnInit,AfterViewInit {
     this.controls.enableZoom = true
     this.controls.update();
 
-    this.loader.load('../../assets/models/pencil.glb', (gltf) => {
+    this.loader.load('../../assets/models/pencil__paper.glb', (gltf) => {
       const model = gltf.scene;
-      model.position.set(0, 1, 0);
+      model.position.set(0, -10, 0);
       this.scene.add(model);
 
       const ambientLight = new THREE.AmbientLight(0xffffff);
