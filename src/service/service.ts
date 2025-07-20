@@ -18,6 +18,14 @@ export class ServicesService {
 }
 
 export const EducationDatas:EducationDataModel[]=[
+   {
+      schoolName:"Galatasaray University",
+      startDate:new Date('09.01.2024'),
+      endDate:new Date('07.01.2025'),
+      department:"Engineering Management",
+      city:"Istanbul",
+      country:"Türkiye"
+   },
     {
        schoolName:"Kocaeli University",
        startDate:new Date('09.01.2019'),
@@ -38,7 +46,7 @@ export const EducationDatas:EducationDataModel[]=[
 export const EmploymentDatas:EmploymentDataModel[]=[
     {
        companyName:"Acıbadem Technology",
-       title:"Junior Software Developer",
+       title:"Software Developer",
        summary:"I have been involved in the Core project since its inception and it is still ongoing, while also being involved in all stages of the Netherland regulation project from inception to the live phase.",
        additionalInformation:["Learned microservices architecture.","Learned Docker,RabbitMq technologies.","Written unit tests.","Designed microservices with Clean-Architecture.","Screens developed with Angular."],
        startDate:new Date('07.04.2022'),
@@ -64,12 +72,12 @@ export const ProjectsData:ProjectsDataModel[]=[
    {
       projectName:'TARLADAN EVE',
       information:'I aimed to reach farmers directly to consumers with the "Tarladan Eve" e-commerce site I created as my graduation project. While doing this project, I used technologies such as Microsevice, Angular, C#, .netCore, Clean architecture, Unit test, Docker, CQRS.',
-      imageRoot:'https://drive.google.com/file/d/14J4nTxmxFE0FqFwVqbbR3_8XuekbNlUP/preview'
+      imageRoot:'https://drive.google.com/file/d/1wc8QTzgTHj02pAQ1_IFieoga2n61e0B4/view'
    },
    {
       projectName:'PERSONAL WEB SITE',
       information:'I created a website summarizing my resume using Angular and Angular material. This is my first project where I experienced Angular.',
-      imageRoot:'https://drive.google.com/file/d/1WWBye8YNUYDUfsHApCFzOCEuoAmCwLjB/preview'
+      imageRoot:'https://drive.google.com/file/d/1XI2qEVTZGH5RMfBdI9ShUYd03y1PW2AX/view'
    }
 ]
 
