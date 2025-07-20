@@ -47,8 +47,12 @@ export const EmploymentDatas:EmploymentDataModel[]=[
     {
        companyName:"Acıbadem Technology",
        title:"Software Developer",
-       summary:"I have been involved in the Core project since its inception and it is still ongoing, while also being involved in all stages of the Netherland regulation project from inception to the live phase.",
-       additionalInformation:["Learned microservices architecture.","Learned Docker,RabbitMq technologies.","Written unit tests.","Designed microservices with Clean-Architecture.","Screens developed with Angular."],
+       summary:"Contributed to the “Core” project since its inception and continue to support its ongoing development, while actively participating in all development phases of the “Netherlands Regulation” project from inception to go-live",
+       additionalInformation:["Utilized Microservice Architecture, Docker and RabbitMQ to build scalable and decoupled systems.",
+         "Designed microservices with Clean-Architecture.",
+         "Screens developed with Angular.",
+         "Developed front-end components using Angular, ensuring pixel-perfect and responsive UI based on Figma designs.",
+         "Implemented RxJS for reactive programming."],
        startDate:new Date('07.04.2022'),
        endDate:undefined,
        department:"Financial Software Team",
@@ -72,12 +76,12 @@ export const ProjectsData:ProjectsDataModel[]=[
    {
       projectName:'TARLADAN EVE',
       information:'I aimed to reach farmers directly to consumers with the "Tarladan Eve" e-commerce site I created as my graduation project. While doing this project, I used technologies such as Microsevice, Angular, C#, .netCore, Clean architecture, Unit test, Docker, CQRS.',
-      imageRoot:'https://drive.google.com/file/d/1wc8QTzgTHj02pAQ1_IFieoga2n61e0B4/view'
+      imageRoot:'https://drive.google.com/file/d/1wc8QTzgTHj02pAQ1_IFieoga2n61e0B4/preview'
    },
    {
       projectName:'PERSONAL WEB SITE',
       information:'I created a website summarizing my resume using Angular and Angular material. This is my first project where I experienced Angular.',
-      imageRoot:'https://drive.google.com/file/d/1XI2qEVTZGH5RMfBdI9ShUYd03y1PW2AX/view'
+      imageRoot:'https://drive.google.com/file/d/1XI2qEVTZGH5RMfBdI9ShUYd03y1PW2AX/preview'
    }
 ]
 
